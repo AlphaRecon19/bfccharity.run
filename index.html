@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes, user-scalable=no">
     <meta name="description" content="">
-    <title>BFCharity.run</title>
+    <title>BFCCharity.run</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
@@ -20,10 +20,74 @@
             margin-right: auto;
         }
 
-        ul.details {
+        ul.race-details {
             font-size: 18px;
         }
 
+        .race-date {
+            font-size: 26px;
+        }
+
+        .header-image > img {
+            margin-top: -2px;
+        }
+
+        img.blesma {
+            width: 75% !important;
+        }
+
+        img.mod {
+            width: 20% !important;
+            max-height: 100px;
+            display: inline-block;
+            margin-left: 3%;
+        }
+
+        .row-logos {
+            margin-top: 80px;
+        }
+
+        @media (min-width: 321px) {
+            .race-date {
+                font-size: 32px;
+            }
+        }
+
+        @media (min-width: 405px) {
+            .race-date {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .race-date {
+                text-align: center;
+            }
+
+            ul.race-details {
+                padding: 0;
+                font-size: 20px;
+                text-align: center;
+                list-style-type: none;
+            }
+
+            .container {
+                padding-right: 0px;
+                padding-left: 0px;
+                overflow-x: hidden;
+            }
+            .row-logos {
+                bottom: 5px;
+                position: absolute;
+                margin-top: auto;
+            }
+        }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -34,17 +98,17 @@
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col-sm-6 themed-grid-col">
-                <h1>Saturday 13th April 4pm</h1>
-                <ul class="details">
+            <div class="col-sm-6">
+                <h1 class="race-date">Saturday 13th April 4pm</h1>
+                <ul class="race-details">
                     <li>Registration 1530</li>
                     <li>€5 for 5K or 10Km</li>
                     <li>€1 for children’s race (1K)</li>
                 </ul>
             </div>
-            <div class="col-sm-6 themed-grid-col">
+            <div class="col-sm-6 row-logos">
                 <a href="https://blesma.org">
-                    <img class="img-fluid w-100" src="blesma.svg" />
+                    <img class="img-fluid w-100 blesma" src="blesma.svg" />
                 </a>
                 <img class="img-fluid mod" src="mod.jpg" />
             </div>
